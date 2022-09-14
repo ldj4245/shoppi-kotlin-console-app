@@ -2,7 +2,8 @@ package data
 
 object CartItems {
     private val mutableProducts = mutableMapOf<Product,Int>()
-    val pruducts:Map<Product,Int> = mutableProducts
+    val products:Map<Product,Int> = mutableProducts
+
 
 
     fun addProduct(product: Product){

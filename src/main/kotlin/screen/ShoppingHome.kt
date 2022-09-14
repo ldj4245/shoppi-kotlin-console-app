@@ -1,5 +1,7 @@
 package screen
 
+import extensions.getNotEmptyString
+
 class ShoppingHome {
 
     fun start(){
@@ -12,7 +14,7 @@ class ShoppingHome {
         println("안녕하세요, 환영해요")
         println("이름을 입력해주세요")
 
-        val name = readLine()
+        val name = readLine().getNotEmptyString()
 
         println(
             """
