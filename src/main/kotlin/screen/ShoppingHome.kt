@@ -24,7 +24,6 @@ class ShoppingHome {
         )
     }
 
-
     private fun showCategories() {
 
         val shoppingCategory = ShoppingCategory()
