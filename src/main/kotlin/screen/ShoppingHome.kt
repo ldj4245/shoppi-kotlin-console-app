@@ -2,11 +2,12 @@ package screen
 
 import extensions.getNotEmptyString
 
-class ShoppingHome {
+class ShoppingHome:Screen() {
 
     fun start(){
 
         showWelcomeMessage()
+        ScreenStack.push(this)
         showCategories()
 
     }

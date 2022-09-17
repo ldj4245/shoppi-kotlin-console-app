@@ -3,12 +3,13 @@ package screen
 import LINE_DIVIDER
 import data.CartItems
 
-class ShoppingCart{ //쇼핑카트에는 당연히 리스트를 보여줘야 하기 때문에
+class ShoppingCart:Screen(){ //쇼핑카트에는 당연히 리스트를 보여줘야 하기 때문리
     private val products = CartItems.products
 
     fun showCarItemes(){
+        ScreenStack.push(this)
         if(products.isNotEmpty()){
-            println(products.keys.joinToString(
+            println(products.keys.joinToString( //joinString에서 어차피 it으로 뺄수 있음
                 separator = ",\n",
                 prefix="""
                    $LINE_DIVIDER
